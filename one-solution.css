@@ -1,0 +1,148 @@
+
+/* this will be updated in the future as i try and make this shorter and have less redundant classes and styles. */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+html {
+  font-family: "Red Hat Display", sans-serif;
+  background: url("./images/pattern-background-desktop.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* PLEASE DO NOT TOUCH THE HEIGHTS AND WIDTH PROPERTIES ! content bricks and is 
+no longer responsive at lower heights */
+/* Using scale was a much easier solution to improper size management */
+.panel-card {
+  border-radius: 30px;
+  width: 450px;
+  transform: scale(0.8); 
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(127, 127, 177, 0.568) 5px 20px 30px 5px;
+}
+.box{
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+.box img {
+  width: 100%;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+#panel {
+  padding: 0 30px 20px 30px;
+}
+.panel-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.panel-details h1 {
+  font-weight: 900;
+  padding: 20px 0;
+}
+
+.panel-details p {
+  font-weight: 500;
+  font-size: 16px;
+  color: gray;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.panel-pricing {
+  margin: 25px 0;
+}
+
+.pricing {
+  display: flex;
+  flex-basis: auto;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 20px;
+  padding: 10px 20px 10px 10px;
+}
+
+.pricing img {
+  width: 80px;
+  padding: 8px 10px;
+}
+.pricing a {
+  text-align: center;
+  align-self: center;
+  margin-left: auto;
+  font-weight: 700;
+}
+.annual-plan {
+  padding: 10px 5px;
+}
+.annual-plan p {
+  position: relative;
+  color: gray;
+  font-size: 0.9em;
+  padding: 5px 0;
+}
+.annual-plan h2 {
+  font-weight: 800;
+  font-size: 1.1em;
+}
+
+.panel-checkout button {
+  display: block;
+  padding: 18px 0;
+  width: 100%;
+  border-radius: 15px;
+  margin: 10px 0;
+  border: none;
+  font-weight: 700;
+  font-family: "Red Hat Display", sans-serif;
+  letter-spacing: 0.5px;
+  color: hsla(246, 14%, 30%, 0.712);
+}
+.panel-checkout button:hover,
+.panel-checkout button:focus {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  transition: 500ms all ease;
+  cursor: pointer;
+  box-shadow: 0px 10px 55px hsla(244, 57%, 49%, 0.76);
+}
+
+.panel-checkout button.selected:hover,
+.panel-checkout button.selected:focus {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  transition: 500ms all ease;
+  cursor: pointer;
+  box-shadow: 0px 10px 55px hsla(244, 57%, 49%, 0.76);
+}
+
+.attribution {
+  transform: scale(0.8);
+  justify-content: space-between;
+  padding: 10px;
+  position: relative;
+  top: -40px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
